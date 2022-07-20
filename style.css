@@ -5,7 +5,7 @@ body {
     
 }
 div.logo {
-    padding-left: 200px;
+    padding-left: 410px;
 }
 .myButton {
 	box-shadow: 0px 1px 0px 0px #fff6af;
@@ -16,12 +16,13 @@ div.logo {
 	display:inline-block;
 	cursor:pointer;
 	color:#333333;
-	font-family:Quicksand;
-	font-size:30px;
+	font-family:Arial;
+	font-size:25px;
 	font-weight:bold;
 	padding:10px 40px;
 	text-decoration:none;
-	text-shadow:0px 1px 0px #ffee66; 
+	text-shadow:0px 1px 0px #ffee66;
+    
 }
 .myButton:hover {
 	background:linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);
@@ -32,5 +33,5 @@ div.logo {
 	top:1px;
 }
 div.soci {
-    padding: auto;	
+    padding-left: 250px;
 }
