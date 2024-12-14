@@ -1,37 +1,108 @@
-body {
-    background-image: url(un_con.jpg);
-    background-size: 100%;
-    background-position: center;
-    
-}
-div.logo {
-    padding-left: 410px;
-}
-.myButton {
-	box-shadow: 0px 1px 0px 0px #fff6af;
-	background:linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
-	background-color:#ffec64;
-	border-radius:6px;
-	border:1px solid #ffaa22;
-	display:inline-block;
-	cursor:pointer;
-	color:#333333;
-	font-family:Arial;
-	font-size:25px;
-	font-weight:bold;
-	padding:10px 40px;
-	text-decoration:none;
-	text-shadow:0px 1px 0px #ffee66;
-    
-}
-.myButton:hover {
-	background:linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);
-	background-color:#ffab23;
-}
-.myButton:active {
-	position:relative;
-	top:1px;
-}
-div.soci {
-    padding-left: 250px;
-}
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      color: #fff;
+      overflow: hidden;
+    }
+
+    /* Profile Card Container */
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      width: 100%;
+    }
+
+    /* Profile Card */
+    .profile-card {
+      background-color: #fff;
+      border-radius: 15px;
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+      padding: 40px 30px;
+      text-align: center;
+      width: 320px;
+      transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    }
+
+    .profile-card:hover {
+      transform: translateY(-15px);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Profile Image */
+    .profile-img {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #fff;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+      transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    }
+
+    .profile-img:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Name Styling */
+    .name {
+      font-size: 28px;
+      font-weight: 600;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    /* Description Text Styling */
+    .description {
+      font-size: 16px;
+      color: #555;
+      line-height: 1.6;
+      margin-bottom: 25px;
+    }
+
+    /* Social Media Links */
+    .social-links {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 20px;
+    }
+
+    /* Social Media Icons */
+    .social-icon {
+      font-size: 28px;
+      color: #333;
+      transition: color 0.3s, transform 0.3s;
+    }
+
+    .social-icon:hover {
+      color: #2575fc;
+      transform: translateY(-5px);
+    }
+
+    /* Icon specific colors */
+    .github:hover {
+      color: #333;
+    }
+
+    .linkedin:hover {
+      color: #0077b5;
+    }
+
+    .instagram:hover {
+      color: #e4405f;
+    }
