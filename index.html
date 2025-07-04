@@ -22,6 +22,27 @@
       }
     }
   </script>
+
+  <style>
+    /* Background image behind header's logo text container */
+    header .logo-bg {
+      background-image: url('logo-bg.png'); /* Replace with your image path */
+      background-repeat: no-repeat;
+      background-position: left center;
+      background-size: 40px 40px;
+      padding-left: 50px; /* Space for the image */
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    /* Background image behind entire Home section */
+    #home {
+      background-image: url('bg.jpg'); /* Replace with your background image path */
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+    }
+  </style>
 </head>
 <body class="bg-gray-50 text-gray-800 font-sans relative">
 
@@ -29,7 +50,8 @@
   <header class="fixed top-0 left-0 w-full bg-white shadow z-50">
     <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
       <div>
-        <h1 class="text-2xl font-bold text-primary">Aenuka Buddhakorala</h1>
+        <!-- Added a div with class logo-bg around the name for background image -->
+        <h1 class="text-2xl font-bold text-primary logo-bg">Aenuka Buddhakorala</h1>
       </div>
       <!-- Desktop Navigation -->
       <nav class="hidden md:flex space-x-6 font-medium">
@@ -43,13 +65,13 @@
   </header>
 
   <!-- Home Section -->
-  <section id="home" class="min-h-screen flex flex-col justify-center items-center text-center bg-primary text-white pt-20 px-4">
+  <section id="home" class="min-h-screen flex flex-col justify-center items-center text-center text-white pt-20 px-4">
     <img src="Wallpaper.png" alt="Profile" class="w-36 h-36 rounded-full shadow-lg mb-6 object-cover" />
     <h2 class="text-4xl font-bold mb-2">Aenuka Buddhakorala</h2>
     <p class="text-lg max-w-xl">
-      
+      <!-- You can add a tagline or introduction here -->
     </p>
-    <a href="#projects" class="mt-6 inline-block bg-white text-primary font-semibold py-2 px-6 rounded-full shadow hover:bg-gray-100 transition">
+    <a href="#projects" class="mt-6 inline-block bg-primary text-white font-semibold py-2 px-6 rounded-full shadow hover:bg-secondary transition">
       See My Work
     </a>
   </section>
@@ -166,43 +188,26 @@ MERN stack for ITP Module.</p>
           type="text"
           placeholder="Your Name"
           class="w-full border border-gray-300 p-3 rounded focus:outline-none focus:ring-2 focus:ring-primary"
-          required
         />
         <input
           type="email"
           placeholder="Your Email"
           class="w-full border border-gray-300 p-3 rounded focus:outline-none focus:ring-2 focus:ring-primary"
-          required
         />
         <textarea
-          rows="5"
           placeholder="Your Message"
+          rows="4"
           class="w-full border border-gray-300 p-3 rounded focus:outline-none focus:ring-2 focus:ring-primary"
-          required
         ></textarea>
         <button
           type="submit"
-          class="w-full bg-primary text-white py-3 rounded font-semibold hover:bg-blue-700 transition"
+          class="bg-primary text-white px-6 py-3 rounded hover:bg-secondary transition"
         >
           Send Message
         </button>
       </form>
     </div>
   </section>
-
-  <!-- Footer -->
-  <footer class="bg-white text-center py-6 border-t">
-    <p class="text-gray-600">© 2025 John Doe — Built with ❤️ and Tailwind CSS</p>
-  </footer>
-
-  <!-- Scroll to Top Button -->
-  <button
-    onclick="window.scrollTo({ top: 0, behavior: 'smooth' });"
-    class="fixed bottom-6 right-6 bg-primary text-white p-3 rounded-full shadow-lg hover:bg-blue-700 transition"
-    aria-label="Scroll to top"
-  >
-    ↑
-  </button>
 
 </body>
 </html>
