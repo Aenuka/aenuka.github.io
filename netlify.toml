@@ -1,7 +1,0 @@
-[build]
-  publish = "public"
-  functions = "src/functions"
-
-[dev]
-  publish = "public"
-  functions = "src/functions"
